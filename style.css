@@ -1,0 +1,371 @@
+:root
+{
+    /* spacify colors */
+
+    --text-gray:#3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --midnight: #104f55;
+
+    /* gradint color */
+
+    --sky : linear-gradient(120deg, #2193b0, #6dd5ed);
+
+}
+button
+{
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--sky);
+    color: #fff;
+}
+button:hover
+{
+    background: rgb(189, 164, 164) !important;
+    color: var(--bg-color);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/********************************  navigation css*******************************************/
+.nav-link 
+{
+    z-index: 10000 !important;
+    background: linear-gradient(to right , #686666da , #000 );
+    color: #fff !important;
+}
+.navbar-nav , .social-icon a
+{
+    justify-content: center;
+    text-decoration: none !important;
+}
+.navbar .social-icon ul li
+{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    padding:0 15px;
+}
+.navbar-brand
+{
+    padding: 0px 20px;
+}
+.nav-link:hover
+{
+    background: var(--midnight) !important;
+    color: #fff !important;
+}
+.navbar-brand:hover
+{
+    background: var(--sky);
+    color: #fff !important;
+}
+
+/********************************  navigation css end *******************************************/
+
+/********************************  site title css*******************************************/
+
+.site-title
+{
+    background: url(img/awesome.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.site-backgruoun
+{
+    position: absolute;
+    top: 20%;
+    bottom: 50%;
+    left: 30%;
+    right: 30%;
+}
+
+/********************************  site title css end *******************************************/
+
+/********************************  site title css*******************************************/
+
+.carousel-inner img
+{
+    height: 500px;
+    width: 30%;
+}
+
+/********************************  site title css end *******************************************/
+
+/********************************  site content css*******************************************/
+.geeks
+{ 
+    width: 100%; 
+    height: 400px; 
+    overflow: hidden; 
+    margin: 0 auto;
+    position: relative;
+}
+.geeks img
+{ 
+    width: 100%;
+    transition: 0.5s all ease-in-out; 
+}
+.geeks:hover img
+{ 
+    transform: scale(1.3); 
+}
+.post-date
+{
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
+    background: rgb(107, 154, 241) !important;
+    border-radius: 30px !important;
+    padding: 0 30px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;  
+}
+.post-date p
+{
+    padding: 5px 0 !important;
+    margin-bottom: 0 !important;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 10%;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back 
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  /* Style the front side */
+  
+  
+  /* Style the back side */
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+  .flip-box img
+  {
+      width: 300px;
+      height: 200px;
+  }
+.post p
+{
+    position: relative;
+    top: 4%;  
+}
+/********************************  site content css end *******************************************/
+
+/********************************  footer css *******************************************/
+
+footer p
+{
+    color: #ebc0eb;
+}
+footer a
+{
+    color: #fff;
+}
+footer a:hover
+{
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+footer img
+{
+    width: 100%;
+    height: 70px;
+}
+footer .col-md-3 hr
+{
+    display: none;
+}
+footer hr
+{
+    background-color: #fff;
+}
+
+#mybtn
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border: none;
+    color: white;
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#mybtn:hover
+{
+    background-color: #606060;
+    cursor: pointer;
+}
+/********************************  footer css end *******************************************/
+
+/*                         MEDIA QUERY                                     */
+
+@media(max-width:992px)
+{
+    .carousel-item img
+    {
+        height: 300px !important;
+    }
+    .geeks
+    {
+        height: 300px !important;
+    }
+    .post-date
+    {
+        bottom: 23% !important;
+        left: 35%;
+    }
+    .flip-box img
+    {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    .col-4
+    {
+        padding: 0 !important;
+    }
+    .te-left
+    {
+        text-align: center !important;
+    }
+}
+@media(max-width:776px)
+{
+   .geeks img
+    {
+        height: 400px;
+    }
+    .sitebar img
+    {
+        height: 150px;
+        width: 50%;
+    }
+    footer img
+    {
+        width: 80% !important;
+    }
+    footer
+    {
+        text-align: center;
+    }
+    footer .col-md-3 hr
+    {
+        height: 1px;
+        color: #fff !important;
+        background-color: #fff !important;
+        display: block;
+    }
+    footer hr
+    {
+        display: none;
+    }
+    #mybtn
+    {
+        bottom: 10px;
+        right: 20px;
+    }
+}
+@media(max-width: 576px)
+{   
+    .site-backgruoun
+    {
+        position: absolute;
+        top: 0%;
+        bottom: 50%;
+        left: 30%;
+        right: 30%;
+    }
+    .site-backgruoun h1
+    {
+        font-size: 2rem;
+    }
+    .carousel-item h2
+    {
+        font-size: 1.5rem !important;
+    }
+}
+@media(max-width:423px)
+{
+    .post-date
+    {
+        bottom: 29% !important;
+        left: 30%;
+    }
+}
+@media(max-width:355px)
+{
+    .post-date
+    {
+        bottom: 31% !important;
+        left: 25%;
+    }
+}
+@media(max-width:320px)
+{
+    .site-backgruoun h1
+    {
+        font-size: 1.3rem;
+    }
+    .carousel-item h2
+    {
+        font-size: 1.7rem;
+    }
+    .post-date
+    {
+        bottom: 34% !important;
+        left: 25%;
+    }
+}
+@media(max-width:260px)
+{
+    .post-date
+    {
+        bottom: 35% !important;
+        left: 20%;
+    }
+    .post p
+    {
+        top: 10% !important;
+    }
+    .post .post-para
+    {
+        margin-bottom: 50px !important;
+    }
+
+}
+/*                         MEDIA QUERY END                                 */
+
+/********************************  site title css*******************************************/
+
+/********************************  site title css end *******************************************/
