@@ -318,11 +318,6 @@ footer hr
     {
         font-size: 1.5rem !important;
     }
-    .post-date
-    {
-        bottom: 26% !important;
-        left: 20%;
-    }
 }
 @media(max-width:423px)
 {
@@ -356,7 +351,7 @@ footer hr
         left: 25%;
     }
 }
-@media(max-width:260px)
+@media(max-width:270px)
 {
     .post-date
     {
@@ -366,6 +361,27 @@ footer hr
     .post p
     {
         top: 10% !important;
+    }
+    .post .post-para
+    {
+        margin-bottom: 50px !important;
+    }
+
+}
+@media(max-width:243px)
+{
+    .post img
+    {
+        height: 250px !important;
+    }
+    .post-date
+    {
+        bottom: 47% !important;
+        left: 15%;
+    }
+    .post p
+    {
+        top: 1% !important;
     }
     .post .post-para
     {
